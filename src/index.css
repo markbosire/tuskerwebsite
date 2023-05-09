@@ -569,7 +569,7 @@ body {
     font-size: 12px; /* Adjust the icon size */
   }
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1400px) {
   .navbarRight h1 {
     font-size: 20px;
   }
@@ -1321,7 +1321,22 @@ body {
     height: 100vh;
   }
 }
-body,
+
 body div {
-  overflow-x: hidden;
+  overflow: hidden;
+}
+@media screen and (max-height: 500px) {
+  .container {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .shop {
+    height: 150vh;
+  }
+}
+@media screen and (max-height: 500px) and (max-width: 800px) {
+  .container {
+    height: 130vh;
+    overflow: hidden;
+  }
 }
