@@ -349,7 +349,7 @@ body {
   color: #e5c702;
 }
 .shop {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),url("./assets/images/shopbg.png");
+  background-image: url("shopbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
