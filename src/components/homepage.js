@@ -14,10 +14,7 @@ const Homepage = () => {
             <div className="hclrnews">NEWS</div>
           </div>
           <div className="hclRowDR">
-            <span>TuskerFC Anthem Ignites New Dreams</span>
-            <div className="btnContainer">
-              <img alt="btn" src="./assets/images/Button.png"></img>
-            </div>
+          <span>TuskerFC proudly sponsored by Tusker™</span>
           </div>
         </div>
         <div className="hcRight">
