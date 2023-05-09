@@ -1,0 +1,1327 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background-color: #e5c702;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 300;
+  src: url("./fonts/PPNeueMontreal-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 400;
+  src: url("./fonts/PPNeueMontreal-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-weight: 700;
+  src: url("./fonts/PPNeueMontreal-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Neue Montreal";
+  font-style: italic;
+  src: url("./fonts/PPNeueMontreal-Italic.otf") format("opentype");
+}
+.container {
+  position: relative;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(-78deg, #fff 70%, #e5c702 30%);
+}
+.HomepageCenter {
+  display: flex;
+  width: 100%;
+}
+.HomepageCenter .hcLeft,
+.HomepageCenter .hcRight {
+  max-width: 50%;
+}
+.HomepageCenter .hcLeft {
+  padding: 240px 50px;
+}
+.HomepageCenter .hcLeft h1 {
+  font-size: 110px;
+  color: #000;
+
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.hclRowTN {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.HomepageCenter .hcLeft .hclRowTN div {
+  border-radius: 100px;
+  padding: 12px 40px;
+  margin-right: 30px;
+  margin-bottom: 120px;
+}
+.schedule .hclrtickets {
+  border-radius: 100px;
+  padding: 12px 40px;
+}
+.HomepageCenter .hcLeft .hclRowTN .hclrtickets,
+.hclrtickets {
+  background-color: #000;
+  color: #e5c702;
+}
+.navbarLeft div:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+.HomepageCenter .hcLeft .hclRowTN .hclrtickets:hover,
+.HomepageCenter .hcLeft .hclRowTN .hclrnews:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #e5c702;
+}
+.hclrtickets:hover {
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+}
+.HomepageCenter .hcLeft .hclRowTN .hclrnews {
+  background-color: #e5c702;
+  color: #000;
+}
+.hclRowDR {
+  display: flex;
+  align-items: center;
+}
+.hclRowDR span {
+  font-family: "PP Neue Montreal";
+  font-weight: 700;
+  font-size: 22px;
+  margin-right: 20px;
+}
+.hclRowDR div {
+  width: 48px;
+  height: 48px;
+}
+.hclRowDR div img {
+  max-width: 100;
+  max-height: 100%;
+  object-fit: contain;
+}
+.hcRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 50%;
+}
+.hcRight img {
+  max-height: 700px;
+  max-width: 700px;
+  object-fit: contain;
+}
+.text {
+  position: absolute;
+  max-height: 100%;
+  object-fit: cover;
+}
+.navbar {
+  background-color: #e5c702;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  padding: 5px 0;
+}
+.navbar section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px;
+}
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+.loop {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 15px;
+}
+.navbarRight span {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.navbarRight h1 {
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.navbarLeft {
+  display: flex;
+}
+.navbarLeft div {
+  margin-right: 15px;
+  padding: 8px 20px;
+  font-size: 16px;
+}
+.navbarLeft .navbarSchedule {
+  border: 1px solid #000;
+  color: #000;
+}
+.navbarLeft .navbarTickets {
+  background-color: #000;
+  color: #fbe0db;
+}
+.table-container {
+  margin-top: 40px;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table-container th {
+  border-bottom: 1px solid #000;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.table-container tr:nth-child(odd) {
+  background-color: #e5c702;
+}
+.schedule {
+  padding: 100px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5c702;
+  width: 100%;
+}
+.schedule .scheduleTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 70px;
+
+  width: 80%;
+}
+.schedule .scheduleTitle span {
+  font-size: 44px;
+  font-weight: 400;
+  color: #000;
+}
+.match-fixture {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.team-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.marqueelogo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.team-name {
+  font-weight: bold;
+}
+
+.vs {
+  margin: 0 10px;
+  font-weight: bold;
+}
+.News {
+  font-family: "PP Neue Montreal";
+  width: 100%;
+  height: 70vh;
+  background-color: #000;
+
+  padding: 100px 0px;
+}
+.News section {
+  margin: 0 70px;
+  display: flex;
+}
+.newsLeft .newstickets {
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 12px 40px;
+  color: #000;
+  width: 120px;
+  margin: 20px 0;
+}
+.newsLeft section {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.newsLeft,
+.newsRight {
+  max-width: 50%;
+  min-height: 100%;
+}
+
+.News h1 {
+  font-size: 50px;
+  color: #e5c702;
+  margin-bottom: 50px;
+}
+.News span {
+  font-size: 65px;
+
+  font-style: italic;
+  color: #fff;
+}
+.newsRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 50%;
+  min-height: 100%;
+}
+.newsRight img {
+  max-height: 700px;
+  max-width: 700px;
+  object-fit: contain;
+}
+.MoreNews {
+  height: 70vh;
+  width: 100%;
+  background-color: #000;
+  padding: 40px 0;
+}
+.MoreNews section {
+  margin: 0 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.MoreNews div {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+.MoreNews .imgContainer {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.MoreNews .imgContainer img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.MoreNews div span {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 400px;
+}
+.MoreNews div span:hover {
+  text-decoration: underline;
+}
+.MoreNews div h1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #e5c702;
+}
+.shop {
+  background-image: url("./assets/images/shopbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.shopDiv p,
+.shopDiv h1 {
+  color: #000;
+  margin-bottom: 30px;
+}
+.shopDiv h1 {
+  font-size: 70px;
+}
+.shopDiv p {
+  font-size: 20px;
+  text-align: right !important;
+}
+.shopDiv {
+  float: right;
+  margin-right: 70px;
+  text-align: right;
+}
+.buttons {
+  float: right;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.shopDivButton {
+  float: right;
+  background-color: #e5c702;
+  border-radius: 100px;
+  padding: 12px 40px;
+  color: #000;
+  width: 120px;
+  margin: 20px 0;
+}
+.marqueetext {
+  font-size: 14px;
+  color: #000;
+}
+.social-media-icons {
+  margin: 20px 0;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  width: 140px; /* Adjust the width to your preference */
+}
+
+.social-media-icons a {
+  text-decoration: none !important;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust the size of the container and icon */
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e5c702;
+  transition: background-color 0.3s;
+}
+
+.social-media-icons a:hover,
+.shopDivButton:hover {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+.newsLeft .newstickets:hover {
+  background-color: #e5c702;
+  cursor: pointer;
+}
+
+.social-media-icons i {
+  color: white;
+  font-size: 20px; /* Adjust the icon size */
+}
+@media screen and (max-width: 1700px) {
+  .navbarRight h1 {
+    font-size: 24px;
+  }
+  .navbar section {
+    margin: 0 30px;
+  }
+  .navbarRight span {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  .navbarLeft div {
+    margin-right: 12px;
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 240px 100px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 70px;
+  }
+  .hcRight img {
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .hclRowTN {
+    margin-top: 40px;
+  }
+  .HomepageCenter .hcLeft .hclRowTN div {
+    border-radius: 100px;
+    padding: 8px 40px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+  .hclRowDR span {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .hclRowDR div {
+    width: 36px;
+    height: 36px;
+  }
+  .schedule {
+    padding: 120px 0;
+  }
+  .schedule .scheduleTitle span {
+    font-size: 30px;
+  }
+  .schedule .hclrtickets {
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+  .table-container {
+    font-size: 16px;
+  }
+  .News {
+    padding: 100px 0px;
+  }
+  .News section {
+    margin: 0 50px;
+  }
+  .News h1 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+  }
+  .News span {
+    font-size: 50px;
+  }
+  .newsLeft .newstickets {
+    padding: 12px 24px;
+    font-size: 16px;
+    width: 120px;
+    margin: 50px 0;
+  }
+  .newsRight img {
+    max-height: 600px;
+    max-width: 600px;
+  }
+  .MoreNews section {
+    margin: 0 120px;
+  }
+  .MoreNews div {
+    max-width: 400px;
+  }
+  .MoreNews .imgContainer {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 12px;
+  }
+  .MoreNews .imgContainer img {
+    width: 400px;
+    height: 400px;
+  }
+  .MoreNews div h1 {
+    font-size: 18px;
+  }
+  .MoreNews div span {
+    font-size: 16px;
+
+    max-width: 400px;
+  }
+  .shopDiv {
+    margin-right: 50px;
+  }
+  .shopDiv h1 {
+    font-size: 60px;
+  }
+  .shopDiv p,
+  .shopDiv h1 {
+    margin-bottom: 20px;
+  }
+  .shopDiv p {
+    font-size: 18px;
+  }
+  .shopDivButton {
+    font-size: 16px;
+    padding: 10px 30px;
+
+    width: 120px;
+    margin: 20px 0;
+  }
+  .social-media-icons {
+    margin: 10px 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+  }
+  .social-media-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .social-media-icons i {
+    font-size: 12px; /* Adjust the icon size */
+  }
+}
+@media screen and (max-width: 1366px) {
+  .navbarRight h1 {
+    font-size: 20px;
+  }
+  .navbar section {
+    margin: 0 25px;
+  }
+  .navbarRight span {
+    margin-left: 16px;
+    font-size: 16px;
+  }
+  .navbarLeft div {
+    margin-right: 10px;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 200px 80px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 60px;
+  }
+  .hcRight img {
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .hclRowTN {
+    margin-top: 20px;
+  }
+  .HomepageCenter .hcLeft .hclRowTN div {
+    border-radius: 100px;
+    padding: 8px 40px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    font-size: 12px;
+  }
+  .hclRowDR span {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .hclRowDR div {
+    width: 24px;
+    height: 24px;
+  }
+  .schedule .scheduleTitle span {
+    font-size: 24px;
+  }
+  .schedule .hclrtickets {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+  .table-container {
+    font-size: 12px;
+  }
+  .News {
+    padding: 80px 0px;
+  }
+  .News section {
+    margin: 0 30px;
+  }
+  .News h1 {
+    font-size: 30px;
+
+    margin-bottom: 40px;
+  }
+  .News span {
+    font-size: 40px;
+  }
+  .newsLeft .newstickets {
+    padding: 10px 20px;
+    font-size: 12px;
+    width: 90px;
+    margin: 30px 0;
+  }
+  .newsRight img {
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .MoreNews section {
+    margin: 0 70px;
+  }
+  .MoreNews div {
+    max-width: 300px;
+  }
+  .MoreNews .imgContainer {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .MoreNews .imgContainer img {
+    width: 300px;
+    height: 300px;
+  }
+  .MoreNews div h1 {
+    font-size: 14px;
+  }
+  .MoreNews div span {
+    font-size: 16px;
+
+    max-width: 300px;
+  }
+  .shopDiv {
+    margin-right: 40px;
+  }
+  .shopDiv h1 {
+    font-size: 40px;
+  }
+  .shopDiv p,
+  .shopDiv h1 {
+    margin-bottom: 20px;
+  }
+  .shopDiv p {
+    font-size: 14px;
+  }
+  .shopDivButton {
+    font-size: 14px;
+    padding: 8px 25px;
+
+    width: 100px;
+    margin: 20px 0;
+  }
+  .social-media-icons {
+    margin: 10px 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+  }
+  .social-media-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  .social-media-icons i {
+    font-size: 12px; /* Adjust the icon size */
+  }
+}
+@media screen and (max-width: 1280px) {
+  .navbarRight h1 {
+    font-size: 20px;
+  }
+  .navbar section {
+    margin: 0 30px;
+  }
+  .navbarRight span {
+    margin-left: 14px;
+    font-size: 16px;
+  }
+  .navbarLeft div {
+    margin-right: 12px;
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 220px 80px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 60px;
+  }
+  .hcRight img {
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .hclRowTN {
+    margin-top: 40px;
+  }
+  .HomepageCenter .hcLeft .hclRowTN div {
+    border-radius: 100px;
+    padding: 8px 40px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+  .hclRowDR span {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .hclRowDR div {
+    width: 36px;
+    height: 36px;
+  }
+  .schedule {
+    padding: 50px 0;
+  }
+  .schedule .scheduleTitle span {
+    font-size: 32px;
+  }
+  .schedule .hclrtickets {
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+  .table-container {
+    font-size: 16px;
+  }
+  .News {
+    padding: 100px 0px;
+  }
+  .News section {
+    margin: 0 50px;
+  }
+  .News h1 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+  }
+  .News span {
+    font-size: 50px;
+  }
+  .newsLeft .newstickets {
+    padding: 12px 24px;
+    font-size: 16px;
+    width: 120px;
+    margin: 50px 0;
+  }
+  .newsRight img {
+    max-height: 600px;
+    max-width: 600px;
+  }
+  .MoreNews section {
+    margin: 0 70px;
+  }
+  .MoreNews div {
+    max-width: 300px;
+  }
+  .MoreNews .imgContainer {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 12px;
+  }
+  .MoreNews .imgContainer img {
+    width: 300px;
+    height: 300px;
+  }
+  .MoreNews div h1 {
+    font-size: 16px;
+  }
+  .MoreNews div span {
+    font-size: 16px;
+
+    max-width: 300px;
+  }
+  .shopDiv {
+    margin-right: 50px;
+  }
+  .shopDiv h1 {
+    font-size: 60px;
+  }
+  .shopDiv p,
+  .shopDiv h1 {
+    margin-bottom: 20px;
+  }
+  .shopDiv p {
+    font-size: 18px;
+  }
+  .shopDivButton {
+    font-size: 16px;
+    padding: 10px 30px;
+
+    width: 120px;
+    margin: 20px 0;
+  }
+  .social-media-icons {
+    margin: 10px 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+  }
+  .social-media-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .social-media-icons i {
+    font-size: 12px; /* Adjust the icon size */
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbarRight h1 {
+    font-size: 14px;
+  }
+  .navbar section {
+    margin: 0 25px;
+  }
+  .navbarRight span {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+  .navbarLeft div {
+    margin-right: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 200px 40px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 50px;
+  }
+  .hcRight img {
+    max-height: 400px;
+    max-width: 400px;
+  }
+  .hclRowTN {
+    margin-top: 20px;
+  }
+  .HomepageCenter .hcLeft .hclRowTN div {
+    border-radius: 100px;
+    padding: 6px 20px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    font-size: 12px;
+  }
+  .hclRowDR span {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .hclRowDR div {
+    width: 24px;
+    height: 24px;
+  }
+  .schedule .scheduleTitle span {
+    font-size: 24px;
+  }
+  .schedule .hclrtickets {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+  .table-container {
+    font-size: 12px;
+  }
+  .News {
+    padding: 80px 0px;
+  }
+  .News section {
+    margin: 0 30px;
+  }
+  .News h1 {
+    font-size: 30px;
+
+    margin-bottom: 40px;
+  }
+  .News span {
+    font-size: 40px;
+  }
+  .newsLeft .newstickets {
+    padding: 10px 20px;
+    font-size: 12px;
+    width: 90px;
+    margin: 30px 0;
+  }
+  .newsRight img {
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .MoreNews section {
+    margin: 0 50px;
+  }
+  .MoreNews div {
+    max-width: 250px;
+  }
+  .MoreNews .imgContainer {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  .MoreNews .imgContainer img {
+    width: 250px;
+    height: 250px;
+  }
+  .MoreNews div h1 {
+    font-size: 14px;
+  }
+  .MoreNews div span {
+    font-size: 14px;
+
+    max-width: 250px;
+  }
+  .shopDiv {
+    margin-right: 40px;
+  }
+  .shopDiv h1 {
+    font-size: 40px;
+  }
+  .shopDiv p,
+  .shopDiv h1 {
+    margin-bottom: 20px;
+  }
+  .shopDiv p {
+    font-size: 14px;
+  }
+  .shopDivButton {
+    font-size: 14px;
+    padding: 8px 25px;
+
+    width: 100px;
+    margin: 20px 0;
+  }
+  .social-media-icons {
+    margin: 10px 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+  }
+  .social-media-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  .social-media-icons i {
+    font-size: 12px; /* Adjust the icon size */
+  }
+  .MoreNews {
+    height: fit-content;
+    margin: 0;
+    border: 1px solid #000;
+  }
+  .News {
+    height: fit-content;
+    margin: 0;
+    border: 1px solid #000;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbarRight h1 {
+    font-size: 14px;
+  }
+  .navbar section {
+    margin: 0 25px;
+  }
+  .navbarRight span {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+  .navbarLeft div {
+    margin-right: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 130px 40px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 40px;
+  }
+  .hcRight img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .hclRowTN {
+    margin-top: 20px;
+  }
+  .HomepageCenter .hcLeft .hclRowTN div {
+    border-radius: 100px;
+    padding: 6px 20px;
+    margin-right: 15px;
+    margin-bottom: 60px;
+    font-size: 12px;
+  }
+  .hclRowDR span {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .hclRowDR div {
+    width: 24px;
+    height: 24px;
+  }
+  .schedule .scheduleTitle span {
+    font-size: 24px;
+  }
+  .schedule .hclrtickets {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+  .table-container {
+    font-size: 12px;
+  }
+  .News {
+    padding: 50px 0px;
+  }
+  .News section {
+    margin: 0 30px;
+  }
+  .News h1 {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+  }
+  .News span {
+    font-size: 30px;
+  }
+  .newsLeft .newstickets {
+    padding: 5px 20px;
+    font-size: 12px;
+    width: 90px;
+    margin: 10px 0;
+  }
+  .newsRight img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .MoreNews section {
+    margin: 0 5px;
+  }
+  .MoreNews div {
+    max-width: 200px;
+  }
+  .MoreNews .imgContainer {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .MoreNews .imgContainer img {
+    width: 200px;
+    height: 200px;
+  }
+  .MoreNews div h1 {
+    font-size: 12px;
+  }
+  .MoreNews div span {
+    font-size: 12px;
+
+    max-width: 200px;
+  }
+  .shopDiv {
+    margin-right: 30px;
+  }
+  .shopDiv h1 {
+    font-size: 30px;
+  }
+  .shopDiv p,
+  .shopDiv h1 {
+    margin-bottom: 10px;
+  }
+  .shopDiv p {
+    font-size: 12px;
+  }
+  .shopDivButton {
+    font-size: 12px;
+    padding: 6px 20px;
+
+    width: 90px;
+    margin: 10px 0;
+  }
+  .social-media-icons {
+    margin: 10px 0;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+  }
+  .social-media-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  .social-media-icons i {
+    font-size: 12px; /* Adjust the icon size */
+  }
+}
+@media screen and (max-width: 600px) {
+  .hclRowDR span {
+    font-size: 10px;
+    font-family: "roboto";
+    font-weight: 300;
+    margin: 0;
+    max-width: fit-content;
+  }
+  .hclRowDR {
+    display: none;
+  }
+  .hclRowDR div {
+    width: 20px;
+    height: 20px;
+  }
+  .navbar section {
+    margin: 0 10px;
+  }
+  .navbarRight span {
+    display: none;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 130px 10px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 25px;
+  }
+  .hcRight img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .container {
+    height: 50vh;
+    overflow: hidden;
+  }
+  .schedule {
+    padding: 60px 0;
+  }
+  .table-container {
+    font-size: 12px;
+    width: 80%;
+  }
+  .table-container th,
+  .table-container td {
+    padding: 6px;
+  }
+  .match-fixture {
+    padding: 6px;
+  }
+  .vs {
+    margin: 0 6px;
+  }
+  .team-logo {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+  }
+
+  .schedule .scheduleTitle {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    text-align: left;
+    width: 95%;
+  }
+  .News section {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .newsLeft,
+  .newsRight {
+    max-width: 100%;
+  }
+  .newsRight img {
+    max-height: 100vw;
+    max-width: 100vw;
+  }
+  .MoreNews {
+    height: 150vh;
+  }
+  .MoreNews section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .MoreNews div {
+    max-width: 80vw;
+  }
+  .MoreNews .imgContainer {
+    margin-top: 20px;
+    width: 80vw;
+    height: 80vw;
+  }
+  .MoreNews .imgContainer img {
+    width: 80vw;
+    height: 80vw;
+  }
+  .MoreNews div span {
+    max-width: 80vw;
+    font-size: 15px;
+  }
+  .shop {
+    height: 60vh;
+  }
+  .shopDiv {
+    float: left;
+    margin-left: 10px;
+    text-align: left;
+  }
+  .shopDiv p {
+    text-align: left !important;
+  }
+
+  .buttons {
+    float: left;
+  }
+  .social-media-icons {
+    margin: 5px 0;
+  }
+  .shopDiv p {
+    font-size: 14px;
+  }
+  .shopDivButton,
+  .shopDiv p {
+    margin: 5px 0;
+  }
+  body,
+  body div {
+    overflow-x: hidden;
+  }
+  .MoreNews {
+    height: fit-content;
+    margin: 0;
+    border: 1px solid #000;
+  }
+  .News {
+    height: fit-content;
+    margin: 0;
+    border: 1px solid #000;
+  }
+}
+@media screen and (max-width: 400px) {
+  .HomepageCenter .hcLeft .hclRowTN div {
+    display: flex;
+    justify-content: center;
+  }
+  .hclRowDR span {
+    margin-right: 5px;
+  }
+  .hclRowDR div {
+    width: 15px;
+    height: 15px;
+  }
+  .hclRowDR span {
+    font-size: 8px;
+  }
+  .HomepageCenter .hcLeft h1 {
+    font-size: 20px;
+  }
+  .HomepageCenter .hcLeft {
+    padding: 100px 10px;
+  }
+  .HomepageCenter .hcLeft {
+    max-width: 70%;
+    width: 70%;
+  }
+  .hcRight img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  body,
+  body div {
+    overflow-x: hidden;
+  }
+  .table-container {
+    font-size: 10px;
+    width: 80%;
+  }
+  .MoreNews {
+    height: fit-content;
+    margin: 0;
+    border: 1px solid #000;
+  }
+  .News {
+    height: fit-content;
+    margin: 0;
+    border: 1px solid #000;
+  }
+  .shop {
+    height: 100vh;
+  }
+}
+body,
+body div {
+  overflow-x: hidden;
+}
